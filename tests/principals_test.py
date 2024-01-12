@@ -78,3 +78,13 @@ def test_ready(client):
     assert response.status_code == 200
     data = response.json
     assert data['status'] == "ready"
+
+def test_request_without_X_Principal_header(client):
+    response = client.get(
+        '/principal/assignments'
+    )
+
+    assert response.status_code == 401
+    response_error = response.json 
+    assert response_error["error"] == "FyleError"
+    assert response_error["message"] == "principal not found"
