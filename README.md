@@ -25,7 +25,6 @@ You will hear back within 48 hours from us via email.
 
 1. Fork this repository to your github account
 2. Clone the forked repository and proceed with steps mentioned below
-
 ### Install requirements
 
 ```
@@ -53,4 +52,37 @@ pytest -vvv -s tests/
 # for test coverage report
 # pytest --cov
 # open htmlcov/index.html
+```
+
+## Docker Setup
+
+**If you don't have Docker installed, [see here](https://www.docker.com/products/docker-desktop/)**
+
+### Installation
+1. Fork this repository to your GitHub account.
+2. Clone the forked repository and proceed with the steps mentioned below:
+
+```bash
+# Head over to the directory and type the following command
+docker-compose run
+# Now you can see your container is running
+```
+### Run Test
+```
+# Enter into the container shell
+docker exec -it <container name> sh
+
+# For container name, use
+docker ps
+
+# Run tests
+pytest -vvv -s tests/
+
+# For test coverage report
+# pytest --cov
+# Open htmlcov/index.html
+```
+### Stopping container
+```
+docker-compose down
 ```
