@@ -25,6 +25,10 @@ You will hear back within 48 hours from us via email.
 
 1. Fork this repository to your github account
 2. Clone the forked repository and proceed with steps mentioned below
+
+### Installation Guide Video
+[![](http://img.youtube.com/vi/m48VjM2EriY/0.jpg)](https://youtu.be/m48VjM2EriY)
+
 ### Install requirements
 
 ```
@@ -53,6 +57,11 @@ pytest -vvv -s tests/
 # pytest --cov
 # open htmlcov/index.html
 ```
+#### Test Video
+[![](http://img.youtube.com/vi/dK_5G-FdluA/0.jpg)](https://youtu.be/dK_5G-FdluA)
+
+#### Test Coverage Video
+[![](http://img.youtube.com/vi/GdTFLauDztk/0.jpg)](https://youtu.be/GdTFLauDztk)
 
 ## Docker Setup
 
