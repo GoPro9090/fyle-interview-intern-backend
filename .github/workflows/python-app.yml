@@ -31,8 +31,6 @@ jobs:
       run: |
         export FLASK_APP=core/server.py
         flask db upgrade -d core/migrations/
-    - name: Run Server
-      run: bash run.sh 
     - name: Test with pytest
       run: |
         pytest -vvv -s tests/
