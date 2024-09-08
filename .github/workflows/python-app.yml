@@ -33,5 +33,5 @@ jobs:
         flask db upgrade -d core/migrations/
     - name: Test with pytest
       run: |
-        pytest -vvv -s tests/ --cov --cov-fail-under=80 --cov-report=html
+        pytest -vvv -s tests/ --cov --cov-fail-under=97 --cov-report=html
 
